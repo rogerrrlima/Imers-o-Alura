@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - Imersão Alura</title>
-    <!-- Para resetar as configurações do navegador -->
-    <link rel="stylesheet" href="reset.css" />
-    <!-- Folha de estilo do projeto -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Links para trazer os ícones do Fon Awesome via CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify - Imersão Alura</title>
+        <!-- Para resetar as configurações do navegador -->
+        <link rel="stylesheet" href="reset.css"/>
+        <!-- Folha de estilo do projeto -->
+        <link rel="stylesheet" href="style.css"/>
+        <!-- Links para trazer os ícones do Fon Awesome via CDN -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+    </head>
 
-<body>
-    <div class="sidebar">
-        <nav class="sidebar_navigation">
-            <div class="logo">
-                <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="Spotify">
-                </a>
-            </div>
-            <div>
+    <body>
+        <div class="sidebar">
+            <nav class="sidebar__navigation">
+                <div class="logo">
+                    <a href="">
+                        <img src="./assets/icons/logo-spotify.png" alt="Spotify">
+                    </a>
+                </div>
                 <ul>
                     <li>
                         <a href="">
                             <span class="fa fa-home"></span>
-                            <span>Início</span>
+                            <span class="sidebar__link">Início</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <span class="fa fa-search"></span>
-                            <span>Buscar</span>
+                            <span class="sidebar__link">Buscar</span>
                         </a>
                     </li>
                 </ul>
+            </nav>
+
+            <div class="biblioteca">
+                <div class="biblioteca__content">
+                    <button class="biblioteca__button">
+                        <span class="fa fa-book"></span>
+                        <span>Sua biblioteca</span>
+                    </button>
+                    <span class="fa fa-plus"></span>
+                </div>
+                <section class="section-playlist">
+                    <div class="section-playlist__content">
+                        <span class="text title">Crie sua primeira playlist</span>
+                        <span class="text subtitle">É fácil, vamos te ajudar</span>
+                        <button class="section-playlist__button">
+                            <span>Criar playlist</span>
+                        </button>
+                    </div>
+                </section>
+
+                <div class="cookies">
+                    <a href="">Cookies</a>
+                </div>
+
+                <div class="languages">
+                    <button class="languages__button">
+                        <span class="fa fa-globe"></span>
+                        <span>Português do Brasil</span>
+                    </button>
+                </div>
+
             </div>
-        </nav>
-        <div class="biblioteca">
-            <a href="">
-                <span class="fa fa-book"></span>
-                <span>Sua biblioteca</span>
-            </a>
-            <a href="">
-                <span class="fa fa-plus"></span>
-            </a>
         </div>
-    </div>
-</body>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p class="title">Testar o premium de graça</p>
+                    <p class="subtitle">Inscreva-se para curtir música ilimitada e podcasts só com
+                        alguns anúncios. Não precisa de cartão de crédito.</p>
+                </div>
+                <button>
+                    <span>Inscreva-se grátis</span>
+                </button>
+            </div>
+        </footer>
+    </body>
 
 </html>
